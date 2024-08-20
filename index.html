@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <title>Weather App</title>
+    <style>
+        body {
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        #result, #hourly-result, #daily-result {
+            margin: 20px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 8px;
+        }
+        .text-temp {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <input type="text" id="input" class="form-control" placeholder="Shahar nomini kiriting"/>
+        <button type="submit" class="btn btn-success mt-2">Jo'natish</button>
+
+        <div id="result">
+            <h1>Toshkent</h1>
+            <p id="temp">30 °C</p>
+            <p>UZ</p>
+            <p>1723822926</p>
+        </div>
+        <div>
+            <h2 class="text-center text-temp">Har Soatlik Prognoz:</h2>
+            <div id="hourly-result"></div>
+        </div>
+        <div>
+            <h2 class="text-center text-temp">Keyingi Besh Kunlik Prognoz:</h2>
+            <div id="daily-result"></div>
+        </div>
+    </div>
+
+    <script type="module" src="./weather-js/weather.js"></script>
+</body>
+</html>
