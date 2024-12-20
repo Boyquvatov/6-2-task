@@ -7,7 +7,7 @@ const result = document.querySelector("#result");
 const input = document.querySelector("#input");
 const button = document.querySelector("button");
 const temp = document.querySelector("#temp");
-
+const a=3
 function updateBackground(tempValue) {
     if (tempValue < 10) {
         document.body.style.backgroundImage = "url('../weather-img/winterr.jpg')";
